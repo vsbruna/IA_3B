@@ -5,13 +5,13 @@ const caixaResultado = document.querySelector(".caixa-resultado")
 const textoResultado = document.querySelector(".texto-resultado")
 const perguntas = [
      {
-        enunciado: "Como a escola pode usar a tecnologia para criar um ambiente seguro, combatendo a homofobia de forma proativa e acolhendo estudantes LGBTQIA+?",
+        enunciado:"Como podemos desconstruir a dinâmica de poder que sustenta o bullying"
         alternativas: [
             {
-                texto: "A escola pode implementar plataformas digitais para denúncias anônimas de homofobia e desenvolver aplicativos educativos sobre diversidade.",
-                afirmacao: "Ferramentas digitais seguras e informativas fortalecem o suporte a grupos minoritários."
+                texto: " A desconstrução da dinâmica de poder do bullying começa com a educação para a empatia e o respeito às diferenças desde a infância, tanto em casa quanto na escola."
+                afirmacao:
                
-            },
+            }
             {
                 texto: "Usar realidade virtual (RV) ou jogos educativos pode simular preconceito, desenvolvendo empatia e capacitando os alunos a intervir.",
                 afirmacao: "Experiências imersivas aprimoram a compreensão e a sensibilidade social."
