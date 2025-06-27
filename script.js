@@ -5,50 +5,50 @@ const caixaResultado = document.querySelector(".caixa-resultado")
 const textoResultado = document.querySelector(".texto-resultado")
 const perguntas = [
      {
-        enunciado:"Como podemos desconstruir a dinâmica de poder que sustenta o bullying"
+        enunciado:"Quando uma pessoa sofre bullying físico ou verbal, quais das seguintes ações podem ser eficazes para buscar ajuda?",
         alternativas: [
             {
-                texto: " A desconstrução da dinâmica de poder do bullying começa com a educação para a empatia e o respeito às diferenças desde a infância, tanto em casa quanto na escola."
-                afirmacao:
+                texto: "Conversar com um adulto de confiança",
+                afirmacao:"É fundamental compartilhar a situação com pais, professores ou conselheiros, pois eles podem oferecer suporte e intervir de forma adequada."
                
+            },
+            {
+                texto: "Documentar os incidentes",
+                afirmacao: "Anotar datas, horários e detalhes do que aconteceu, além de guardar mensagens ou fotos, pode ser útil como prova caso seja necessário denunciar."
+            },
+        ]
+    },
+    {
+        enunciado: "No contexto do cyberbullying, quais estratégias podem ajudar a proteger a si mesmo(a) e a combater essa prática?",
+        alternativas: [
+            {
+                texto: "Bloquear e denunciar o agressor nas redes sociais",
+                afirmacao: "Bloquear o contato indesejado impede que o agressor continue as hostilidades, e denunciá-lo à plataforma pode levar a ações contra a conta."
+            },
+            {
+                texto: "Evitar responder às provocações e guardar as evidências",
+                afirmacao: "Reagir às mensagens de cyberbullying pode alimentar a situação, enquanto guardar capturas de tela e registros pode ser crucial para uma denúncia futura."
+            },
+        ]
+    },
+    {
+        enunciado: "Diante de uma situação de racismo, quais atitudes são importantes para combater a discriminação e promover a igualdade?",
+        alternativas: [
+            {
+                texto: "Denunciar o ocorrido às autoridades competentes",
+                afirmacao: "Registrar um boletim de ocorrência na polícia ou procurar órgãos de defesa dos direitos humanos é essencial para que o crime de racismo seja investigado e punido."
+            },
+            {
+                texto: "Educar-se e dialogar sobre o tema com outras pessoas",
+                afirmacao: "Buscar informações sobre a história e as manifestações do racismo, além de conversar abertamente, contribui para desconstruir preconceitos e promover a conscientização."
             }
-            {
-                texto: "Usar realidade virtual (RV) ou jogos educativos pode simular preconceito, desenvolvendo empatia e capacitando os alunos a intervir.",
-                afirmacao: "Experiências imersivas aprimoram a compreensão e a sensibilidade social."
-            },
-        ]
-    },
-    {
-        enunciado: "Qual o papel da escola em mitigar isso e promover o uso responsável entre os jovens?",
-        alternativas: [
-            {
-                texto: "Redes sociais propagam cyberbullying. A escola deve educar sobre cidadania digital e pensamento crítico para identificar e combater esses conteúdos.",
-                afirmacao: "A educação digital é crucial para navegar em ambientes online complexos."
-            },
-            {
-                texto: "Algoritmos criam bolhas de filtro. A escola precisa ensinar a questionar informações online e buscar fontes diversas para desconstruir narrativas homofóbicas.",
-                afirmacao: "Compreender algoritmos e diversidade de informação evita a polarização."
-            },
-        ]
-    },
-    {
-        enunciado: "Como a escola pode integrar a tecnologia no currículo para abordar a homofobia como uma questão que exige letramento digital e engajamento cívico dos alunos?",
-        alternativas: [
-            {
-                texto: "A escola pode desenvolver projetos que utilizem mídias digitais (vídeos, podcasts, blogs) para campanhas de conscientização, permitindo que os alunos criem conteúdo e se tornem defensores da inclusão.",
-                afirmacao: "A produção de conteúdo digital pelos alunos amplifica mensagens de inclusão."
-            },
-            {
-                texto: "Incluir aulas sobre ética digital e consequências do cyberbullying homofóbico, usando estudos de caso reais e ferramentas de análise de redes sociais.",
-                afirmacao: "A análise de casos reais e o debate ético no contexto digital são fundamentais para a formação cívica."
-            },
         ]
     },
 ];
 
 let atual = 0;
 let perguntaAtual;
-let historiaFinal = "";
+let historiaFinal = ""
 
 function mostraPergunta() {
     if (atual >= perguntas.length){
